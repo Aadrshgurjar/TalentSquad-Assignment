@@ -39,5 +39,12 @@ This project uses the Unsplash API:
 2. Create a new app & get your **Access Key**
 3. Replace this part in `script.js`:
 
-```js
+```js```
 const accessKey = "YOUR_UNSPLASH_API_KEY";
+
+
+ ## For viewing the website
+ 
+ https://githubbox.com/Aadrshgurjar/TalentSquad-Assignment
+ 
+
