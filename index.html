@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Search Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Image Search Engine</h1>
+    <p>This webpage allows you to explore and search high-quality images powered by the Unsplash API</p>
+  </header>
+
+  <form id="search-form" class="search-box">
+    <input type="text" id="search-input" placeholder="Search landscapes, cars, cats, etc..." />
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="empty" class="empty-state">Try searching for anything...</div>
+
+  <div id="gallery" class="gallery"></div>
+
+  <div class="actions">
+    <button id="show-more">Show More</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

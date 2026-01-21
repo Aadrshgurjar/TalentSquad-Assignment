@@ -1,0 +1,154 @@
+:root {
+  --bg: #0e1525;
+  --text: #e5e9f2;
+  --accent: #4da3ff;
+  --accent-hover: #82c0ff;
+  --card-bg: #141e33;
+  --border: rgba(255,255,255,0.07);
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+/* ---- HEADER ---- */
+header {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 15rem;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+header p {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* ---- SEARCH ---- */
+.search-box {
+  width: 95%;
+  max-width: 680px;
+  margin-top: 30px;
+  padding: 6px;
+  display: flex;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px 18px;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.search-box button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  margin: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  color: #0e1525;
+}
+
+.search-box button:hover {
+  background: var(--accent-hover);
+}
+
+/* ---- GALLERY ---- */
+.gallery {
+  width: 95%;
+  max-width: 1300px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.gallery a {
+  display: block;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  transition: 0.25s ease;
+}
+
+.gallery a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* ---- ACTIONS ---- */
+.actions {
+  margin-top: 30px;
+}
+
+.actions button {
+  display: none;
+  padding: 12px 26px;
+  font-size: 15px;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  background: var(--accent);
+  cursor: pointer;
+  transition: 0.25s;
+  color: #1a1c28;
+}
+
+.actions button:hover {
+  background: var(--accent-hover);
+}
+
+/* ---- EMPTY STATE ---- */
+.empty-state {
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+  .gallery img {
+    height: 200px;
+  }
+}
